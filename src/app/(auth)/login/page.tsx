@@ -1,0 +1,11 @@
+
+import LoginForm from './LoginForm/LoginForm'
+
+
+export default function page() {
+  return (
+    <div>
+      <LoginForm/>
+    </div>
+  )
+}

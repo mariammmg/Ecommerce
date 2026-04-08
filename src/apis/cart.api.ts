@@ -1,0 +1,36 @@
+
+import { getTokenFn } from "@/utlities/getTokenFun";
+import { CartRes } from "./cart/interfaces/cart.interface";
+
+
+export async function getCart():Promise<CartRes|null>{
+    const token= await getTokenFn();
+    if(!token){
+        throw new Error('User not authorized');
+    }
+    try{
+        if(token){
+            const data = await fetch(
+              `https://ecommerce.routemisr.com/api/v1/cart`,
+              {
+                headers: {
+                  token,
+                  "Content-Type": "application/json",
+                },
+              },
+            );
+            const payload = await data.json();
+          //  console.log("cartpayload:", payload);
+            return payload
+
+        }else 
+            return null
+
+    }catch(error){
+        throw new Error('Failed to add product to cart');
+
+    }
+
+    
+    
+}
