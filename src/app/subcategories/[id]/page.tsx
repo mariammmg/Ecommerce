@@ -16,6 +16,8 @@ export interface SubCategoryinterface{
 
 export default async function page({params}:{params:Promise<{id:string}>}) {
     const id =( await params).id;
+    
+    
     const subcategories=await getSubCategoriesonCategory(id);
     
     const category= await getSpecificCategory(id);

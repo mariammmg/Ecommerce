@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Exo } from "next/font/google";
 import "./globals.css";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -11,15 +11,12 @@ import WrapperCom from "./_components/WrapperCom/WrapperCom";
 import TanStackProviders from "@/providers/TanStackProvider";
 import Footer from "./_components/footer/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const exo = Exo({
   subsets: ["latin"],
+  weight: ["400", "500"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -34,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` ${exo.className} antialiased`}
       >
         <TanStackProviders>
           <WrapperCom>

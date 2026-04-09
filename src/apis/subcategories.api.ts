@@ -12,6 +12,7 @@ export async function getSubCategoriesonCategory(id: string): Promise<SubCategor
       throw new Error("Failed to fetch subcategories");
     }
     const payload = await response.json();
+    //console.log("payload", payload);
 
     return payload?.data;
   } catch (error) {

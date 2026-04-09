@@ -34,12 +34,12 @@ export default function HomeSlider({ slidersPerView}: {slidersPerView:number}) {
           <div className="absolute inset-0 bg-green-600/40" />
           {/* Text Content (Left-Aligned, Vertically Centered) */}
           <div className="absolute top-1/2 left-6 -translate-y-1/2 text-white px-4">
-            <h1 className="text-3xl font-bold mb-2">Welcme to Nature</h1>
-            <p className="mb-4 text-lg">
-              Discover beautiful landscapes and adventures
-            </p>
+            <h1 className="text-3xl font-bold mb-2">
+              Fresh Products Delivered to your Door
+            </h1>
+            <p className="mb-4 text-lg">Get 20% off your first order</p>
             <button className="bg-white text-green-700 font-semibold px-5 py-2 rounded hover:bg-green-100 transition">
-              Explore Now
+              Shop Now
             </button>
           </div>
         </div>
@@ -53,14 +53,14 @@ export default function HomeSlider({ slidersPerView}: {slidersPerView:number}) {
           />
           {/* Green Overlay */}
           <div className="absolute inset-0 bg-green-600/40" />
-          {/* Text Content (Left-Aligned, Vertically Centered) */}
+
           <div className="absolute top-1/2 left-6 -translate-y-1/2 text-white px-4">
-            <h1 className="text-3xl font-bold mb-2">Wee to Nature</h1>
-            <p className="mb-4 text-lg">
-              Discover beautiful landscapes and adventures
-            </p>
+            <h1 className="text-3xl font-bold mb-2">
+              Premium Quality Guaranteed
+            </h1>
+            <p className="mb-4 text-lg">Fresh from farm to your table</p>
             <button className="bg-white text-green-700 font-semibold px-5 py-2 rounded hover:bg-green-100 transition">
-              Explore Now
+              Shop Now
             </button>
           </div>
         </div>
@@ -72,20 +72,20 @@ export default function HomeSlider({ slidersPerView}: {slidersPerView:number}) {
             alt="Forest"
             className="w-full h-full object-cover"
           />
-          {/* Green Overlay */}
+          
           <div className="absolute inset-0 bg-green-600/40" />
-          {/* Text Content (Left-Aligned, Vertically Centered) */}
+
           <div className="absolute top-1/2 left-6 -translate-y-1/2 text-white px-4">
-            <h1 className="text-3xl font-bold mb-2">Well to Nature</h1>
+            <h1 className="text-3xl font-bold mb-2">Fast & Free Delivery</h1>
             <p className="mb-4 text-lg">
-              Discover beautiful landscapes and adventures
+              Get your products delivered quickly and free of charge
             </p>
             <div className="flex gap-3 ">
               <button className="bg-white text-green-700 font-semibold px-5 py-2 rounded hover:bg-green-100 transition">
-                Explore Now
+                Shop Now
               </button>
               <button className="bg-white text-green-700 font-semibold px-5 py-2 rounded hover:bg-green-100 transition">
-                Explore Now
+                Shop Now
               </button>
             </div>
           </div>
